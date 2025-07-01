@@ -113,8 +113,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "Bhupender-Bhupender"
+  avatar           : "/assets/images/Untitled design.png"
   bio              : "Data Science & Business Analytics graduate from the University of Warsaw. Passionate about Machine Learning, NLP, and Smart Analytics."
   location         : "Warsaw, Poland"
   email            : "bb.datasage@gmail.com"
@@ -136,7 +136,7 @@ author:
       # url: "https://github.com/Bhupender-Bhupender"
     - label: "Resume"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      # url: "/assets/files/Bhupender Data Analyst.pdf"
 
 # Site Footer
 footer:
