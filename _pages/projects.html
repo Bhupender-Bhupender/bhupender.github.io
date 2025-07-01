@@ -1,0 +1,15 @@
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+
+<h1>My Data Science Projects</h1>
+
+<ul>
+  {% for project in site.Projects %}
+    <li>
+      <a href="{{ project.url }}">{{ project.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
