@@ -17,14 +17,14 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : "Bhupender Sumbharwal Portfolio"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Bhupender-Bhupender"
 description              : "Data Scientist | ML | Python | Based in Warsaw"
 url                      : "https://bhupender.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               :"Bhupender-Bhupender/bhupender.github.io"
+repository               : "Bhupender-Bhupender/bhupender.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -99,7 +99,7 @@ og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   :"Person"
+  type                   : "Person"
   name                   : "Bhupender-Bhupender"
   links: # An array of links to social media profiles
 
@@ -121,7 +121,7 @@ author:
   links:
     - label: "LinkedIn"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "https://www.linkedin.com/in/bhupender-134613345/"
+      url: "https://www.linkedin.com/in/bhupender-134613345/"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -133,10 +133,10 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/Bhupender-Bhupender"
+      url: "https://github.com/Bhupender-Bhupender"
     - label: "Resume"
-      icon: "fab fa-fw fa-instagram"
-      # url: "/assets/files/Bhupender Data Analyst.pdf"
+      icon: ""fas fa-fw fa-file-pdf""
+      url: "/assets/files/Bhupender Data Analyst.pdf"
 
 # Site Footer
 footer:
@@ -149,7 +149,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/Bhupender-Bhupender"
+      url: "https://github.com/Bhupender-Bhupender"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -158,7 +158,7 @@ footer:
       # url:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      # url:  "https://www.linkedin.com/in/bhupender-134613345/"
+      url:  "https://www.linkedin.com/in/bhupender-134613345/"
 
 
 # Reading Files
