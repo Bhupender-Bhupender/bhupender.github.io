@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Bhupender Sumbharwal Portfolio"
+title                    : "Turning Data into Decisions – Portfolio by Bhupender"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Bhupender-Bhupender"
@@ -100,7 +100,7 @@ og_image                 : # Open Graph/Twitter default site image
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   : "Person"
-  name                   : "Bhupender-Bhupender"
+  name                   : "Bhupender"
   links: # An array of links to social media profiles
 
 # Analytics
@@ -113,8 +113,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "Bhupender-Bhupender"
-  avatar           : "/assets/images/Untitled design.png"
+  name             : "Bhupender"
+  avatar           : "/assets/images/157235479.jpeg"
   bio              : "Data Science & Business Analytics graduate from the University of Warsaw. Passionate about Machine Learning, NLP, and Smart Analytics."
   location         : "Warsaw, Poland"
   email            : "bb.datasage@gmail.com"
