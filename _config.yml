@@ -334,3 +334,8 @@ collections:
     output: true
     permalink: /projects/:name/
 
+navigation:
+  enabled: true
+  file: navigation.yml
+
+
