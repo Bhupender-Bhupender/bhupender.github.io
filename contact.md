@@ -6,7 +6,7 @@ permalink: /contact/
 
 ## 📬 Let's Connect!
 
-If you’d like to get in touch, feel free to drop a message using the form below. I’ll respond as soon as possible!
+    If you’d like to get in touch, feel free to drop a message using the form below. I’ll respond as soon as possible!
 
 <form action="https://formspree.io/f/mjkrdkww" method="POST" style="max-width: 600px;">
   <label for="name">Name:</label><br>
