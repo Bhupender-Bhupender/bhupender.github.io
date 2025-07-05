@@ -138,20 +138,10 @@ author:
       icon: "fas fa-fw fa-file-pdf"
       url: "/assets/files/Bhupender Data Analyst.pdf"
 
-      home:
-  sections:
-    - about
+    - label: "<span onmouseover='document.getElementById(\"sidebar-contact\").style.display=\"block\"' onmouseout='document.getElementById(\"sidebar-contact\").style.display=\"none\"'>📬 Contact Me</span><div id='sidebar-contact' style='display:none; font-size: 14px; margin-top: 10px;'>📧 bb.datasage@gmail.com<br>📞 +48 123 456 789</div>"
+      icon: "fas fa-id-badge"
+      url: "#"
 
-about:
-  title: "👋 About Me"
-  text: |
-    I'm **Bhupender**, a Data Science and Business Analytics graduate from the University of Warsaw. I'm passionate about applying data science to real-world problems — with skills in machine learning, NLP, Python, and data engineering.  
-    <br><br>
-    - 🌱 Currently learning Data Science & ML with Scaler  
-    - 🎓 Finished Computer Science and Engineering  
-    - 📍 Based in Warsaw, Poland  
-    <br>
-    **Skills:** Python, R, SQL, Power BI, Tableau, Pandas, Scikit-learn, MySQL, HTML, CSS, GitHub, Flask, Streamlit, GeoPandas, R Shiny, MariaDB
 
 
 # Site Footer
