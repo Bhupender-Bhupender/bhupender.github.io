@@ -336,9 +336,13 @@ defaults:
       author_profile: true
 
 collections:
+  pages:
+    output: true
+    permalink: /:name/
   Projects:
     output: true
     permalink: /projects/:name/
+
 
 navigation:
   enabled: true
