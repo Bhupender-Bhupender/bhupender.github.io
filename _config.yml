@@ -117,7 +117,7 @@ author:
   avatar           : "/assets/images/157235479.jpeg"
   bio              : "Data Science & Business Analytics graduate from the University of Warsaw. Passionate about Machine Learning, NLP, and Smart Analytics."
   location         : "Warsaw, Poland"
-  email            : "bb.datasage@gmail.com"
+  # email            : "bb.datasage@gmail.com"
   links:
     - label: "LinkedIn"
       icon: "fas fa-fw fa-envelope-square"
@@ -138,7 +138,7 @@ author:
       icon: "fas fa-fw fa-file-pdf"
       url: "/assets/files/Bhupender Data Analyst.pdf"
 
-    - label: "<span onmouseover='document.getElementById(\"sidebar-contact\").style.display=\"block\"' onmouseout='document.getElementById(\"sidebar-contact\").style.display=\"none\"'>📬 Contact Me</span><div id='sidebar-contact' style='display:none; font-size: 14px; margin-top: 10px;'>📧 bb.datasage@gmail.com<br>📞 +48 123 456 789</div>"
+    - label: "<span onmouseover='document.getElementById(\"sidebar-contact\").style.display=\"block\"' onmouseout='document.getElementById(\"sidebar-contact\").style.display=\"none\"'>Contact Me</span><div id='sidebar-contact' style='display:none; font-size: 14px; margin-top: 10px;'>📧 bb.datasage@gmail.com<br>📞 +48 123 456 789</div>"
       icon: "fas fa-id-badge"
       url: "#"
 
