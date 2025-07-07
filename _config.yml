@@ -137,6 +137,8 @@ author:
     - label: "Resume"
       icon: "fas fa-fw fa-file-pdf"
       url: "/assets/files/Bhupender_Data_Analyst.pdf"
+      target: "_blank"
+
 
     - label: "<span onmouseover='document.getElementById(\"sidebar-contact\").style.display=\"block\"' onmouseout='document.getElementById(\"sidebar-contact\").style.display=\"none\"'>Contact Me</span><div id='sidebar-contact' style='display:none; font-size: 14px; margin-top: 10px;'>📧 bb.datasage@gmail.com<br>📞 +48 123 456 789</div>"
       icon: "fas fa-id-badge"
