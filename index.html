@@ -1,80 +1,108 @@
----
-layout: single
-permalink: /
-classes: wide
-author_profile: true
----
-<!-- Typing Text Banner -->
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1000&color=000000&center=true&vCenter=true&width=600&lines=Hi%F0%9F%91%8B%2C+I'm+Bhupender;Welcome+to+my+portfolio!+🚀" alt="Typing SVG">
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhupender Sumbharwal | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 100px 20px 40px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #666;
+    }
+    .categories {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      background-color: #ffd900;
+      padding: 10px;
+      flex-wrap: wrap;
+    }
+    .categories span {
+      cursor: pointer;
+      font-weight: bold;
+      padding: 5px 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .card {
+      background: #f8f8f8;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+    }
+    .card h3 {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+    .card p {
+      font-size: 0.95em;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bhupender</h1>
+    <p>Hello! Glad to see you here. This is a collection of my personal projects made during free time.p>
+  </header>
 
-<!-- 2-Column Section: About Me & Image -->
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px; align-items: flex-start; margin-top: 20px;">
-
-  <!-- Left Column: About Me + Skills -->
-  <div style="flex: 1 1 60%; min-width: 300px;">
-
-    <!-- 👋 About Me -->
-    <h2>👋 About Me</h2>
-    <p>
-      I'm <strong>Bhupender</strong>, a Data Science and Business Analytics graduate from the University of Warsaw.
-    </p>
-    <p>
-      Passionate about applying data science to real-world problems — with skills in machine learning, NLP, Python, and data engineering.
-    </p>
-    <ul>
-      <li>🌱 Currently learning <strong>Data Science & ML with Scaler</strong></li>
-      <li>🎓 Finished <strong>Computer Science and Engineering</strong></li>
-      <li>📍 Based in Warsaw, Poland</li>
-    </ul>
-
-    <!-- 🧠 Skills & Tools -->
-    <h2>🧠 Skills & Tools</h2>
-    <p><strong>Languages:</strong> Python, R, SQL, HTML, CSS</p>
-    <p><strong>Libraries:</strong> pandas, scikit-learn, matplotlib, seaborn, Flask, Streamlit, BeautifulSoup</p>
-    <p><strong>Data Tools:</strong> Power BI, Tableau, MySQL, MariaDB, GitHub, R Shiny</p>
-    <p><strong>Others:</strong> Jupyter, VS Code, GeoPandas, Selenium, Bash</p>
+  <div class="categories">
+    <span>All Categories</span>
+    <span>Data Science</span>
+    <span>Data Visualization</span>
+    <span>Finance</span>
+    <span>Machine Learning</span>
   </div>
 
-  <!-- Right Column: GIF Image -->
-  <div style="flex: 1 1 35%; min-width: 250px; display: flex; justify-content: center; align-items: center;">
-    <img src="{{ '/assets/images/Home.gif' | relative_url }}" alt="Visual" style="max-width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border: 1px solid #ccc;">
-  </div>
+  <section class="grid">
+    <div class="card">
+      <img src="assets/images/placeholder1.jpg" alt="Project 1">
+      <h3>E-commerce Customer Prediction</h3>
+      <p>Predictive analysis using Python and Power BI dashboards for strategic targeting.</p>
+    </div>
+    <div class="card">
+      <img src="assets/images/placeholder2.jpg" alt="Project 2">
+      <h3>ESG vs Stock Price Analysis</h3>
+      <p>Exploring how ESG scores correlate with firm stock performance using R and regression.</p>
+    </div>
+    <div class="card">
+      <img src="assets/images/placeholder3.jpg" alt="Project 3">
+      <h3>Innovation Diffusion via Social Networks</h3>
+      <p>Visual network analysis of tech hubs using NetworkX and Crunchbase data.</p>
+    </div>
+  </section>
 
-</div>
-
-
-
-
-
-<!-- ===================== FEATURED PROJECTS ===================== -->
-<br>
-<h2>🚀 Featured Projects</h2>
-
-<div style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 20px;">
-  
-  <!-- Project 1 -->
-  <div style="flex: 1 1 300px; border: 1px solid #ddd; border-radius: 10px; padding: 20px;">
-    <h3><a href="/projects/predictive-analysis-ecommerce">E-Commerce Predictive Analysis</a></h3>
-    <p>Built a predictive analytics model to forecast purchase behavior using customer segmentation and sales trends. Applied ML algorithms and visualized insights with Power BI & Python.</p>
-    <p><strong>Tech:</strong> Python, Pandas, Power BI, Scikit-learn</p>
-  </div>
-
-  <!-- Project 2 -->
-  <div style="flex: 1 1 300px; border: 1px solid #ddd; border-radius: 10px; padding: 20px;">
-    <h3><a href="/projects/social-networks-spatial-ml">Social Networks & Spatial ML</a></h3>
-    <p>Studied urban tech diffusion using Crunchbase data. Combined spatial analysis, network centrality, and Python-based visualizations to map innovation hubs.</p>
-    <p><strong>Tech:</strong> NetworkX, GeoPandas, Python, Spatial ML</p>
-  </div>
-
-</div>
-
-<br>
-<h2>📊 GitHub Stats</h2>
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Bhupender-Bhupender&show_icons=true&theme=default" alt="GitHub Stats" width="60%">
-</p>
-
-<!-- force rebuild -->
-
+  <footer>
+    © 2025 Bhupender | Connect on <a href="https://www.linkedin.com/in/bhupender-134613345/">LinkedIn</a>
+  </footer>
+</body>
+</html>
