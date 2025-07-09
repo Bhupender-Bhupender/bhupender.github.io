@@ -1,108 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bhupender Sumbharwal | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: #fff;
-      color: #333;
-    }
-    header {
-      text-align: center;
-      padding: 100px 20px 40px;
-    }
-    header h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2em;
-      color: #666;
-    }
-    .categories {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      background-color: #ffd900;
-      padding: 10px;
-      flex-wrap: wrap;
-    }
-    .categories span {
-      cursor: pointer;
-      font-weight: bold;
-      padding: 5px 10px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 40px 20px;
-    }
-    .card {
-      background: #f8f8f8;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .card img {
-      width: 100%;
-      border-radius: 6px;
-    }
-    .card h3 {
-      margin-top: 10px;
-      font-size: 1.2em;
-    }
-    .card p {
-      font-size: 0.95em;
-      color: #555;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #999;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Bhupender</h1>
-    <p>Hello! Glad to see you here. This is a collection of my personal projects made during free time.p>
-  </header>
+---
+layout: single
+title: "Bhupender Sumbharwal"
+permalink: /
+classes: wide
+---
 
-  <div class="categories">
-    <span>All Categories</span>
-    <span>Data Science</span>
-    <span>Data Visualization</span>
-    <span>Finance</span>
-    <span>Machine Learning</span>
-  </div>
+<!-- HOME -->
+<section id="home" style="text-align:center; padding: 4em 2em;">
+  <h1>Hi, I’m Bhupender 👋</h1>
+  <p>Turning data into insights | Data Analyst | MSc Student at UW</p>
+  <a href="#projects">📁 View My Projects</a>
+</section>
 
-  <section class="grid">
-    <div class="card">
-      <img src="assets/images/placeholder1.jpg" alt="Project 1">
-      <h3>E-commerce Customer Prediction</h3>
-      <p>Predictive analysis using Python and Power BI dashboards for strategic targeting.</p>
-    </div>
-    <div class="card">
-      <img src="assets/images/placeholder2.jpg" alt="Project 2">
-      <h3>ESG vs Stock Price Analysis</h3>
-      <p>Exploring how ESG scores correlate with firm stock performance using R and regression.</p>
-    </div>
-    <div class="card">
-      <img src="assets/images/placeholder3.jpg" alt="Project 3">
-      <h3>Innovation Diffusion via Social Networks</h3>
-      <p>Visual network analysis of tech hubs using NetworkX and Crunchbase data.</p>
-    </div>
-  </section>
+---
 
-  <footer>
-    © 2025 Bhupender | Connect on <a href="https://www.linkedin.com/in/bhupender-134613345/">LinkedIn</a>
-  </footer>
-</body>
-</html>
+<!-- ABOUT -->
+<section id="about">
+## 👨‍💼 About Me
+
+I’m a passionate **Data Analyst** currently pursuing my Master’s in Data Science and Business Analytics at the **University of Warsaw**.
+
+I enjoy solving real-world problems with **Python**, **SQL**, **Power BI**, and **machine learning** tools. I’ve worked on projects in e-commerce analytics, ESG impact modeling, and startup network mapping.
+
+</section>
+
+---
+
+<!-- PROJECTS -->
+<section id="projects">
+## 💼 Projects
+
+<div class="grid__wrapper">
+
+<div class="grid__item">
+  <img src="/assets/images/project1.png" width="100%">
+  <h4>🛍️ Predictive Analysis – E-commerce</h4>
+  <p>Built a model to predict customer conversion rate using scikit-learn.</p>
+</div>
+
+<div class="grid__item">
+  <img src="/assets/images/project2.png" width="100%">
+  <h4>📊 ESG & Stock Price</h4>
+  <p>Analyzed ESG impact on P&G stock performance during COVID-19.</p>
+</div>
+
+<!-- Add more projects here -->
+
+</div>
+</section>
+
+---
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+## 📜 Certifications
+
+- Python Libraries for Data Analysis – Scaler  
+- Anti-Money Laundering – University of Warsaw
+
+</section>
+
+---
+
+<!-- CONTACT -->
+<section id="contact">
+## 📬 Contact
+
+📧 Email: bhupender@example.com  
+💼 [LinkedIn](https://linkedin.com/in/your-profile)  
+🐱 [GitHub](https://github.com/Bhupender-Bhupender)
+
+</section>
