@@ -1,13 +1,13 @@
-# main links
 main:
   - title: "Home"
     url: /
   - title: "Projects"
-    url: /projects/
+    url: /#projects
   - title: "Certifications"
-    url: /certifications/
+    url: /#certifications
   - title: "Get in Touch"
-    url: /contact/
+    url: /#contact
+
 
 
 
