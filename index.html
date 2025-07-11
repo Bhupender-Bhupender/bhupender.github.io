@@ -1,12 +1,12 @@
----
-layout: single
-permalink: /
-classes: wide
-author_profile: true
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Turning Data into Decisions – Portfolio by Bhupender</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
 
-{% raw %}
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div style="max-width: 900px; margin: auto;">
 <!-- HERO SECTION -->
 <section id="hero" style="padding: 4em 2em; background: linear-gradient(to right, #e0ecff, #f3f4f6); box-shadow: 0 2px 15px rgba(0,0,0,0.05);">
@@ -147,35 +147,16 @@ author_profile: true
 <!-- BACK TO TOP BUTTON -->
 <button onclick="topFunction()" id="backToTop" title="Go to top">↑</button>
 
-<!-- SCRIPTS AND STYLES -->
+<!-- STYLES -->
 <style>
-  html {
-    scroll-behavior: smooth;
-  }
-
-  a:hover {
-    opacity: 0.85;
-    transition: all 0.2s ease-in-out;
-  }
-
-  section h2 {
-    margin-bottom: 1em;
-    font-size: 2em;
-  }
-
+  html { scroll-behavior: smooth; }
+  a:hover { opacity: 0.85; transition: all 0.2s ease-in-out; }
+  section h2 { margin-bottom: 1em; font-size: 2em; }
   @media screen and (max-width: 768px) {
-    #hero {
-      flex-direction: column;
-      text-align: center;
-    }
-    #hero div {
-      flex: 1 1 100% !important;
-    }
-    section {
-      padding: 2em 1em;
-    }
+    #hero { flex-direction: column; text-align: center; }
+    #hero div { flex: 1 1 100% !important; }
+    section { padding: 2em 1em; }
   }
-
   #backToTop {
     display: none;
     position: fixed;
@@ -191,54 +172,46 @@ author_profile: true
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   }
-
   #backToTop:hover {
     background-color: #0056b3;
   }
-
   .hidden {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
   }
-
   .fade-up {
     opacity: 1;
     transform: translateY(0);
   }
 </style>
 
+<!-- SCRIPT -->
 <script>
-  // Back to Top functionality
   window.onscroll = function () {
     document.getElementById("backToTop").style.display =
       document.body.scrollTop > 100 || document.documentElement.scrollTop > 100
-        ? "block"
-        : "none";
+        ? "block" : "none";
   };
-
   function topFunction() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
-
-  // Reveal sections on scroll
   document.addEventListener("DOMContentLoaded", () => {
     const sections = document.querySelectorAll("section");
-    const options = { threshold: 0.1 };
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("fade-up");
         }
       });
-    }, options);
+    }, { threshold: 0.1 });
     sections.forEach((section) => {
       section.classList.add("hidden");
       observer.observe(section);
     });
   });
 </script>
-</div>
 
-{% endraw %}
+</body>
+</html>
 
