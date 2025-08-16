@@ -33,9 +33,9 @@ author_profile: true
   <!-- Filter buttons -->
   <div class="project-toolbar">
     <button class="active" data-filter="all">All</button>
-    <button data-filter="ml">Machine Learning</button>
-    <button data-filter="apps">Software Apps</button>
-    <button data-filter="bigdata">Big Data</button>
+    <button data-filter="ml">Data Science & Machine Learning</button>
+    <button data-filter="apps">Database Solutions & Applications</button>
+    <button data-filter="bigdata">Business Problem & Big Data</button>
   </div>
 
   <!-- Grid -->
@@ -50,6 +50,21 @@ author_profile: true
       </div>
       <a href="https://github.com/Bhupender-Bhupender/BigData-Big-Data-Driven-Insights-Trends-in-IT-Skills-for-Education" target="_blank">View on GitHub</a>
     </div>
+
+
+  
+
+  <!-- BIG DATA -->
+<div class="project-card" data-cat="bigdata">
+  <div>
+    <h3>P&amp;G Product Strategy</h3>
+    <p class="project-desc">Business case analysis for P&amp;G: tested COVID–stock correlations, ESG metric impacts, and recommended data-driven product & sustainability strategies.</p>
+    <p><strong>Tools:</strong> Python, Pandas, Stats (Pearson/Spearman), Visualization</p>
+  </div>
+  <a href="https://github.com/Bhupender-Bhupender/P-G-Product-Strategy" target="_blank">View on GitHub</a>
+</div>
+
+
 
     <!-- MACHINE LEARNING -->
     <div class="project-card" data-cat="ml">
@@ -217,7 +232,7 @@ author_profile: true
   .project-card{
     background:#fff; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,.08);
     padding:14px;
-    aspect-ratio:1 / 1;            /* 🔶 makes the card square */
+    min-height: 280px;            /* 🔶 makes the card square */
     display:flex; flex-direction:column; justify-content:space-between;
     overflow:hidden;
   }
