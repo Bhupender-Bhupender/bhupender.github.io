@@ -26,95 +26,118 @@ author_profile: true
 </section>
 
 
-<!-- PROJECTS -->
+
 <section id="projects" style="padding: 3em 2em; background: #fdf7f0;">
   <h2>Featured Projects</h2>
-  <div style="display: flex; flex-wrap: wrap; gap: 30px; margin-top: 20px;">
 
+  <!-- Filter buttons -->
+  <div class="project-toolbar">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="ml">Machine Learning</button>
+    <button data-filter="apps">Software Apps</button>
+    <button data-filter="bigdata">Big Data</button>
+  </div>
 
-    <!-- Project: Big Data Insights -->
-<div style="flex: 1 1 200px; background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 16px;">
-  <h3>Big Data Insights</h3>
-  <p>Explored IT skill trends in education using big data techniques. Conducted EDA, data visualization, and insights extraction.</p>
-  <p><strong>Tools:</strong> Python, Big Data, Azure, Databricks</p>
-  <a href="https://github.com/Bhupender-Bhupender/BigData-Big-Data-Driven-Insights-Trends-in-IT-Skills-for-Education" target="_blank">View on GitHub</a>
-</div>
+  <!-- Grid -->
+  <div class="project-grid" id="projectGrid">
 
-    <!-- Project: Unsupervised-ML -->
-    <div style="flex: 1 1 200px; background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 16px;">
-      <h3>Unsupervised ML</h3>
-      <p>A collection of unsupervised ML projects in Python including clustering, PCA, and topic modeling.</p>
-      <p><strong>Tools:</strong> Python, Scikit-learn, NLP</p>
+    <!-- BIG DATA -->
+    <div class="project-card" data-cat="bigdata">
+      <div>
+        <h3>Big Data Insights</h3>
+        <p class="project-desc">IT-skills trends in education using big-data EDA, visualizations, and insight extraction.</p>
+        <p><strong>Tools:</strong> Python, Azure, Databricks</p>
+      </div>
+      <a href="https://github.com/Bhupender-Bhupender/BigData-Big-Data-Driven-Insights-Trends-in-IT-Skills-for-Education" target="_blank">View on GitHub</a>
+    </div>
+
+    <!-- MACHINE LEARNING -->
+    <div class="project-card" data-cat="ml">
+      <div>
+        <h3>Unsupervised ML</h3>
+        <p class="project-desc">Clustering, PCA, and topic/association analyses with clean pipelines and evaluation.</p>
+        <p><strong>Tools:</strong> Python, Scikit-learn, NLP</p>
+      </div>
       <a href="https://github.com/Bhupender-Bhupender/Unsupervised-ML-" target="_blank">View on GitHub</a>
     </div>
 
-    <!-- Project: R Shiny MariaDB Student App -->
-    <div style="flex: 1 1 200px; background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 16px;">
-      <h3>R Shiny + MariaDB App</h3>
-      <p>Student management app built with R Shiny + MariaDB for live data interaction, filtering, and dashboarding.</p>
-      <p><strong>Tools:</strong> R Shiny, SQL, Dashboard</p>
-      <a href="https://github.com/Bhupender-Bhupender/R.Shiny-MariaDB-Student-App" target="_blank">View on GitHub</a>
-    </div> 
-
-    <!-- Project: Student Management System -->
-    <div style="flex: 1 1 200px; background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 16px;">
-      <h3>Student Management System</h3>
-      <p>Python-based Student Management System using SQLite. Includes CLI interface for adding, updating, deleting, and viewing student records with database integration.</p>
-      <p><strong>Tools:</strong>Python, Sql Alchemy, Sql Server, Javascript, Html & CSS</p>
-      <a href="https://github.com/Bhupender-Bhupender/Student-Management-System" target="_blank">View on GitHub</a>
-    </div>
-
-    <!-- Project: Web Scraping -->
-    <div style="flex: 1 1 200px; background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 16px;">
-      <h3>Web Scraping</h3>
-      <p>Python-based scripts that scrape GitHub repos, URLs, and article descriptions using requests and BeautifulSoup.</p>
-      <p><strong>Tools:</strong> Python, BeautifulSoup</p>
-      <a href="https://github.com/Bhupender-Bhupender/Web-Scrapping" target="_blank">View on GitHub</a>
-    </div>
-
-    <!-- Project: Social Networks and Spatial ML -->
-    <div style="flex: 1 1 200px; background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 16px;">
-      <h3>Social Networks & Spatial ML</h3>
-      <p>Mapped shared investor networks across tech hubs using Crunchbase and spatial ML.</p>
-      <p><strong>Tools:</strong> Python, GeoPandas, NetworkX</p>
-      <a href="https://github.com/Bhupender-Bhupender/Social-Networks-and-Spatial-ML" target="_blank">View on GitHub</a>
-    </div>
-
-    <!-- Project: Vampire Diaries Report -->
-    <div style="flex: 1 1 200px; background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 16px;">
-      <h3>Vampire Diaries Report</h3>
-      <p>Data analysis of the Vampire Diaries TV series — ownership trends, fan activity, and popularity mapping.</p>
-      <p><strong>Tools:</strong> Python, NLP, Visualization</p>
-      <a href="https://github.com/Bhupender-Bhupender/vampire-diaries-report" target="_blank">View on GitHub</a>
-    </div>
-
-    <!-- Project: Stroke Risk Classification -->
-    <div style="flex: 1 1 200px; background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 16px;">
-      <h3>Stroke Risk Classification</h3>
-      <p>Classification using models like logistic regression and XGBoost to predict risk.</p>
-      <p><strong>Tools:</strong> Python, Sklearn, XGBoost</p>
+    <div class="project-card" data-cat="ml">
+      <div>
+        <h3>Stroke Risk Classification</h3>
+        <p class="project-desc">Health risk prediction with Logistic Regression, Random Forest, and XGBoost; full metrics.</p>
+        <p><strong>Tools:</strong> Python, Scikit-learn, XGBoost</p>
+      </div>
       <a href="https://github.com/Bhupender-Bhupender/Stroke-risk-classification" target="_blank">View on GitHub</a>
     </div>
 
-    <!-- Project: Seoul Bike Regression -->
-    <div style="flex: 1 1 200px; background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 16px;">
-      <h3>Seoul Bike Regression</h3>
-      <p>Regression model built to forecast bike rentals using weather and temporal data.</p>
-      <p><strong>Tools:</strong> Python, Linear & Ridge Regression</p>
+    <div class="project-card" data-cat="ml">
+      <div>
+        <h3>Seoul Bike Regression</h3>
+        <p class="project-desc">Forecasting rentals from weather/temporal features; feature engineering + model comparison.</p>
+        <p><strong>Tools:</strong> Python, Linear & Ridge</p>
+      </div>
       <a href="https://github.com/Bhupender-Bhupender/Seoul-bike-regression-model" target="_blank">View on GitHub</a>
     </div>
 
-    <!-- Project: E-Commerce Predictive Analysis -->
-    <div style="flex: 1 1 200px; background: #fff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 16px;">
-      <h3>E-Commerce Predictive Analysis</h3>
-      <p>Predictive modeling and customer behavior analysis for an online shopping portal.</p>
-      <p><strong>Tools:</strong> Python, Pandas, Power BI</p>
+    <div class="project-card" data-cat="ml">
+      <div>
+        <h3>Predictive Analysis (E-commerce)</h3>
+        <p class="project-desc">Customer behavior modeling and demand prediction for an online shopping dataset.</p>
+        <p><strong>Tools:</strong> Python, Pandas, ML</p>
+      </div>
       <a href="https://github.com/Bhupender-Bhupender/Predictive-Analysis-Ecommerce" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card" data-cat="ml">
+      <div>
+        <h3>Vampire Diaries Report</h3>
+        <p class="project-desc">Series analytics—viewership/popularity trends and season-wise insights via visuals.</p>
+        <p><strong>Tools:</strong> Python, Visualization</p>
+      </div>
+      <a href="https://github.com/Bhupender-Bhupender/vampire-diaries-report" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card" data-cat="ml">
+      <div>
+        <h3>Social Networks & Spatial ML</h3>
+        <p class="project-desc">Startup network analysis (shared investor ties) and spatial diffusion patterns.</p>
+        <p><strong>Tools:</strong> Python, GeoPandas, NetworkX</p>
+      </div>
+      <a href="https://github.com/Bhupender-Bhupender/Social-Networks-and-Spatial-ML" target="_blank">View on GitHub</a>
+    </div>
+
+    <!-- SOFTWARE APPS / TOOLS -->
+    <div class="project-card" data-cat="apps">
+      <div>
+        <h3>R Shiny + MariaDB App</h3>
+        <p class="project-desc">Student management app: live DB interaction, filtering, and dashboards.</p>
+        <p><strong>Tools:</strong> R Shiny, SQL</p>
+      </div>
+      <a href="https://github.com/Bhupender-Bhupender/R.Shiny-MariaDB-Student-App" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card" data-cat="apps">
+      <div>
+        <h3>Student Management System</h3>
+        <p class="project-desc">CLI system with SQLite for add/update/delete/view; lightweight DB integration.</p>
+        <p><strong>Tools:</strong> Python, SQLite</p>
+      </div>
+      <a href="https://github.com/Bhupender-Bhupender/Student-Management-System" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-card" data-cat="apps">
+      <div>
+        <h3>Web Scraping</h3>
+        <p class="project-desc">Scrapes GitHub Topics: titles, URLs, stars, and descriptions (requests + BeautifulSoup).</p>
+        <p><strong>Tools:</strong> Python, BeautifulSoup</p>
+      </div>
+      <a href="https://github.com/Bhupender-Bhupender/Web-Scrapping" target="_blank">View on GitHub</a>
     </div>
 
   </div>
 </section>
 
+    
 
 <!-- CERTIFICATIONS -->
 <section id="certifications" style="padding: 3em 2em; background: #e9f5e9;">
@@ -173,6 +196,42 @@ author_profile: true
     background-color: #0056b3;
   }
 </style>
+<style>
+  /* Project grid */
+  .project-toolbar{
+    display:flex; gap:.6rem; flex-wrap:wrap; margin:.5rem 0 1rem 0;
+  }
+  .project-toolbar button{
+    padding:.45rem .8rem; border:1px solid #ddd; border-radius:999px;
+    background:#fff; cursor:pointer; font-size:.95rem;
+  }
+  .project-toolbar button.active{ border-color:#111; box-shadow:0 1px 6px rgba(0,0,0,.08); }
+
+  .project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); /* ~20% smaller */
+    gap:18px;
+  }
+
+  /* Square project card */
+  .project-card{
+    background:#fff; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,.08);
+    padding:14px;
+    aspect-ratio:1 / 1;            /* 🔶 makes the card square */
+    display:flex; flex-direction:column; justify-content:space-between;
+    overflow:hidden;
+  }
+
+  .project-card h3{ margin:.2rem 0 .3rem 0; font-size:1.1rem; }
+  .project-card p{ margin:.25rem 0; font-size:.95rem; line-height:1.35; }
+
+  /* Clamp description so it stays tidy inside a square */
+  .project-desc{
+    display:-webkit-box; -webkit-line-clamp:5; -webkit-box-orient:vertical; overflow:hidden;
+  }
+
+  .hidden{ display:none !important; }
+</style>
 
 <script>
   // Show/hide button when scrolling
@@ -190,6 +249,21 @@ author_profile: true
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 </script>
+
+  <script>
+  // Category filter
+  const buttons = document.querySelectorAll('.project-toolbar button');
+  const cards = document.querySelectorAll('.project-card');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const f = btn.dataset.filter;
+      cards.forEach(c => c.classList.toggle('hidden', !(f === 'all' || c.dataset.cat === f)));
+    });
+  });
+</script>
+
 
 
 </div>
