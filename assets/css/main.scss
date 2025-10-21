@@ -7,3 +7,7 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* Author avatar (sidebar/profile card) */
+.author__avatar       { width: 140px; }                 /* change size here */
+.author__avatar img   { width: 140px; height: 140px; object-fit: cover; border-radius: 50%; }
